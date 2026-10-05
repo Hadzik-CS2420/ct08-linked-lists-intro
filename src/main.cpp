@@ -21,10 +21,12 @@ int main() {
     // --- 1. Customers arrive (push_back) ---
     std::cout << "--- 1. Customers arriving at Farr's ---\n";
 
-    // TODO 1: Three customers arrive and join the BACK of the line.
-    //         Add tickets 101, 102 and 103 with push_back, printing a line
-    //         like "push_back(101) -- Ticket #101 arrives" before each.
-
+    std::cout << "push_back(101) -- Ticket #101 arrives\n";
+    line.push_back(101);
+    std::cout << "push_back(102) -- Ticket #102 arrives\n";
+    line.push_back(102);
+    std::cout << "push_back(103) -- Ticket #103 arrives\n";
+    line.push_back(103);
     std::cout << "Current line: ";
     line.print();
     std::cout << "People waiting: " << line.get_size() << "\n\n";
@@ -36,9 +38,8 @@ int main() {
     // --- 2. A VIP cuts to the front (push_front) ---
     std::cout << "--- 2. VIP cuts to the front ---\n";
 
-    // TODO 2: A VIP cuts to the FRONT. Add ticket 200 with push_front,
-    //         printing "push_front(200) -- VIP cuts to the front!" first.
-
+    std::cout << "push_front(200) -- VIP cuts to the front!\n";
+    line.push_front(200);
     std::cout << "Current line: ";
     line.print();
     std::cout << "People waiting: " << line.get_size() << "\n\n";
@@ -51,10 +52,8 @@ int main() {
     // --- 3. Serving customers (pop_front) ---
     std::cout << "--- 3. Serving customers ---\n";
 
-    // TODO 3: Serve the customer at the FRONT with pop_front, printing
-    //         "pop_front() -- Serving ticket at the front" first.
-    //         (The second serving further down is left for you too.)
-
+    std::cout << "pop_front() -- Serving ticket at the front\n";
+    line.pop_front();
     std::cout << "Current line: ";
     line.print();
     std::cout << "People waiting: " << line.get_size() << "\n\n";
@@ -88,9 +87,8 @@ int main() {
     // --- 5. Customer at the back gives up and leaves (pop_back) ---
     std::cout << "--- 5. Customer at the back gives up ---\n";
 
-    // TODO 4: The customer at the BACK gives up. Remove them with pop_back,
-    //         printing "pop_back() -- Ticket at the back gives up waiting" first.
-
+    std::cout << "pop_back() -- Ticket at the back gives up waiting\n";
+    line.pop_back();
     std::cout << "Current line: ";
     line.print();
     std::cout << "People waiting: " << line.get_size() << "\n\n";
