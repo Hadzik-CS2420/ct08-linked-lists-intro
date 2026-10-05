@@ -2,7 +2,7 @@
 
 ## Overview
 
-An in-class code-together activity introducing singly linked lists through a Farr's Ice Cream ticket queue scenario. Students implement all core list operations — destructor, push/pop front & back, and print — by completing TODO items as the instructor walks through concepts and diagrams. Search and remove operations are covered in CT8.
+An in-class code-together activity introducing singly linked lists through a Farr's Ice Cream ticket queue scenario. Students implement all core list operations — destructor, push/pop front & back, and print — by completing TODO items as the instructor walks through concepts and diagrams. Search and remove operations are covered in CT 09.
 
 > ▶️ **Run the tests yourself.** From the top of this repo:
 >
@@ -13,6 +13,13 @@ An in-class code-together activity introducing singly linked lists through a Far
 > It builds if it needs to, runs the suite, and prints a scored breakdown that
 > matches what the autograder awards. Submit a **screenshot of that output** —
 > not a repository URL.
+
+> ▶️ **Watch the pointers move, one step at a time.** Your repo has
+> `images/stepper.html` — **double-click it** to open it in your browser and
+> press **Next**. It runs `push_front` against `push_back`'s walk, `pop_back`'s
+> trailing pointer (including the single-node case), and the destructor's
+> save-advance-delete — plus the version of each that compiles and then breaks.
+> Nothing to install, and it works offline.
 
 ## Files
 
@@ -62,7 +69,7 @@ Work through `SinglyLinkedList.cpp` in the order the operations are used in `mai
 
 #### 6. `print` -- Traversing the List
 - Fundamental traversal pattern: `current` starts at head, follows `next` until nullptr
-- Same pattern reused in CT8's `contains` and `remove`
+- Same pattern reused in CT 09's `contains` and `remove`
 
 ## Key Concepts
 
