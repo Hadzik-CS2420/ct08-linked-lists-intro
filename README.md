@@ -1,8 +1,18 @@
-# CT7 -- Singly Linked List Introduction
+# Code-Together 08: Singly Linked List Introduction
 
 ## Overview
 
 An in-class code-together activity introducing singly linked lists through a Farr's Ice Cream ticket queue scenario. Students implement all core list operations — destructor, push/pop front & back, and print — by completing TODO items as the instructor walks through concepts and diagrams. Search and remove operations are covered in CT8.
+
+> ▶️ **Run the tests yourself.** From the top of this repo:
+>
+> ```
+> python3 tests/scorecard.py
+> ```
+>
+> It builds if it needs to, runs the suite, and prints a scored breakdown that
+> matches what the autograder awards. Submit a **screenshot of that output** —
+> not a repository URL.
 
 ## Files
 

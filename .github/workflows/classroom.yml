@@ -1,6 +1,6 @@
 name: Autograding Tests
 on:
-  - push
+  - workflow_dispatch
   - repository_dispatch
 permissions:
   checks: write
@@ -22,11 +22,11 @@ jobs:
         cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
         cmake --build build --config Release
 
-    - name: Build Check (2 points)
+    - name: Build Check (0 points)
       id: build
       uses: classroom-resources/autograding-command-grader@v1
       with:
-        test-name: Build Check (2 points)
+        test-name: Build Check (0 points)
         setup-command: ''
         command: |
           if [ -f build/run_tests ]; then
@@ -35,7 +35,7 @@ jobs:
             echo "Build failed" && exit 1
           fi
         timeout: 10
-        max-score: 2
+        max-score: 0
 
     # ==================== Destructor Tests (6 points) ====================
 
@@ -52,7 +52,7 @@ jobs:
             exit 1
           fi
         timeout: 10
-        max-score: 6
+        max-score: 4
 
     # ==================== push_front Tests (8 points) ====================
 
@@ -69,7 +69,7 @@ jobs:
             exit 1
           fi
         timeout: 10
-        max-score: 4
+        max-score: 3
 
     - name: Push Front Multiple Elements (4 points)
       id: push-front-multiple
@@ -84,7 +84,7 @@ jobs:
             exit 1
           fi
         timeout: 10
-        max-score: 4
+        max-score: 2
 
     # ==================== push_back Tests (8 points) ====================
 
@@ -101,7 +101,7 @@ jobs:
             exit 1
           fi
         timeout: 10
-        max-score: 4
+        max-score: 3
 
     - name: Push Back Multiple Elements (4 points)
       id: push-back-multiple
@@ -116,7 +116,7 @@ jobs:
             exit 1
           fi
         timeout: 10
-        max-score: 4
+        max-score: 2
 
     # ==================== pop_front Tests (8 points) ====================
 
@@ -133,7 +133,7 @@ jobs:
             exit 1
           fi
         timeout: 10
-        max-score: 4
+        max-score: 3
 
     - name: Pop Front To Empty (4 points)
       id: pop-front-empty
@@ -148,7 +148,7 @@ jobs:
             exit 1
           fi
         timeout: 10
-        max-score: 4
+        max-score: 2
 
     # ==================== pop_back Tests (10 points) ====================
 
@@ -165,7 +165,7 @@ jobs:
             exit 1
           fi
         timeout: 10
-        max-score: 5
+        max-score: 3
 
     - name: Pop Back To Empty (5 points)
       id: pop-back-empty
@@ -180,7 +180,7 @@ jobs:
             exit 1
           fi
         timeout: 10
-        max-score: 5
+        max-score: 2
 
     # ==================== Getters & Print Tests (8 points) ====================
 
@@ -227,7 +227,7 @@ jobs:
             exit 1
           fi
         timeout: 10
-        max-score: 4
+        max-score: 2
 
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
