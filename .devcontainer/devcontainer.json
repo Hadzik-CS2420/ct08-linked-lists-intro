@@ -1,5 +1,5 @@
 {
-  "name": "ct08-linked-lists-intro",
+  "name": "CS 2420 · ct08-linked-lists-intro",
   "image": "mcr.microsoft.com/devcontainers/cpp:1-ubuntu-24.04",
   "containerEnv": {
     "CC": "gcc-13",
