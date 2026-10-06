@@ -140,7 +140,7 @@ void SinglyLinkedList::print() const {
     //   - Use a 'current' pointer that starts at head and follows
     //     next pointers until it hits nullptr (end of list)
     //   - This is the fundamental traversal pattern for linked lists —
-    //     you'll see it again in search and remove operations (CT8)
+    //     you'll see it again in search and remove operations (CT 09)
     // TODO 18: Walk a 'current' pointer from head_ until it is nullptr,
     //          printing each node's data followed by " -> ", then print
     //          "nullptr" and a newline to mark the end.

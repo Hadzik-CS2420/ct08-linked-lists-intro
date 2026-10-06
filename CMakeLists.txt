@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(ct7-linked-lists-intro LANGUAGES CXX)
+project(ct08-linked-lists-intro LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 23)
 

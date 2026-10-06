@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    std::cout << "=== Code-Together 7: Farr's Ice Cream Ticket Queue ===\n\n";
+    std::cout << "=== Code-Together 08: Farr's Ice Cream Ticket Queue ===\n\n";
 
     // ! DISCUSSION: Arrays vs linked lists — when to use which?
     //   Imagine Farr's Ice Cream on a busy Friday night. Customers grab
